@@ -171,7 +171,7 @@ nav {
 
 /* MAIN HEADER */
 .header-text {
-  margin-top: 8rem;
+  margin-top: 5rem;
   font-size: 2.5rem;
   line-height: 3.125rem;
   text-align: center;
@@ -226,6 +226,23 @@ nav {
 
 .btn-style:hover {
   background: #5ac4de1f;
+}
+
+@media (max-width: 48em) {
+  .header-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .btn-style {
+    width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+    text-align: center;
+    margin: 0.625rem 0; /* Adjust vertical margin as needed */
+  }
 }
 
 @media (min-width: 48em) {
