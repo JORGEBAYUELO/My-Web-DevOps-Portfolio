@@ -71,12 +71,13 @@ nav {
 
 /* HOVER EFFECT FOR NAVBAR */
 @media screen and (max-width: 48em) {
-  body {
+  body,
+  html {
     overflow-x: hidden;
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 8vh;
     height: 92vh;
@@ -84,7 +85,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 50vw;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -172,8 +173,8 @@ nav {
 .header-btns {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
 }
 
