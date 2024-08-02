@@ -3,11 +3,21 @@ const navSlide = () => {
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
 
-  burgerMenu.addEventListener("click", () => {
-    //   TOGGLE NAV
-    nav.classList.toggle("nav-active");
+  // Add this code to create the backdrop
+  const backdrop = document.createElement("div");
+  backdrop.classList.add("nav-backdrop");
+  document.body.appendChild(backdrop);
 
-    //   ANIMATED LINKS
+  burgerMenu.addEventListener("click", () => {
+    // TOGGLE NAV //
+    nav.classList.toggle("nav-active");
+    // Toggle backdrop
+    backdrop.classList.toggle("active");
+    document.body.style.overflow = nav.classList.contains("nav-active")
+      ? "hidden"
+      : "auto";
+
+    // ANIMATED LINKS //
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = "";
@@ -18,7 +28,15 @@ const navSlide = () => {
       }
     });
 
-    // BURGER ANIMATION
+    // Add this event listener to close the menu when clicking the backdrop
+    backdrop.addEventListener("click", () => {
+      nav.classList.remove("nav-active");
+      backdrop.classList.remove("active");
+      burgerMenu.classList.remove("toggle");
+      document.body.style.overflow = "auto";
+    });
+
+    // BURGER ANIMATION //
     burgerMenu.classList.toggle("toggle");
   });
 };
