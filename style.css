@@ -340,9 +340,15 @@ h3 {
   margin: 0.625rem 0;
 }
 
+/* .card-btns {
+  display: flex;
+  justify-content: space-between;
+} */
+
 .card-btns {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .card-btns .btn-style {
@@ -370,6 +376,17 @@ h3 {
   font-size: 3.125rem;
   color: #5ac4de;
   --ionicon-stroke-width: 1rem;
+}
+
+@media (max-width: 48em) {
+  .card-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 
 /* ABOUT ME SECTION */
