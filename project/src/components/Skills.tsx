@@ -1,24 +1,24 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const skills = [
-  { name: 'Linux/Unix Systems', level: 88 },
-  { name: 'Bash Scripting', level: 85 },
-  { name: 'AWS/Cloud Platforms', level: 90 },
-  { name: 'Kubernetes', level: 85 },
-  { name: 'Docker', level: 95 },
-  { name: 'CI/CD', level: 90 },
-  { name: 'Infrastructure as Code', level: 88 },
-  { name: 'Python/Go', level: 82 },
-  { name: 'Monitoring & Logging', level: 87 },
-  { name: 'Security & Compliance', level: 85 }
+  { name: "Linux/Unix Systems", level: 88 },
+  { name: "Bash Scripting", level: 85 },
+  { name: "AWS/Cloud Platforms", level: 90 },
+  { name: "Active Directory", level: 85 },
+  { name: "Docker", level: 95 },
+  { name: "CI/CD", level: 90 },
+  { name: "Infrastructure as Code", level: 88 },
+  { name: "Python/Go", level: 82 },
+  { name: "Monitoring & Logging", level: 87 },
+  { name: "Security & Compliance", level: 85 },
 ];
 
 const Skills = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   return (
@@ -27,7 +27,7 @@ const Skills = () => {
         <h2 className="text-3xl font-bold text-text mb-12 text-center">
           Technical Skills
         </h2>
-        
+
         <div ref={ref} className="space-y-6">
           {skills.map((skill, index) => (
             <div key={index} className="space-y-2">
