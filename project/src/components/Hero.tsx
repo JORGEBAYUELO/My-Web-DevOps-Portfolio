@@ -34,12 +34,13 @@ const Hero = () => {
             Hi, I'm Jorge Bayuelo
           </h1>
           <p className="text-2xl md:text-3xl text-subtext1 mb-4">
-            System Admin & DevOps Engineer
+            IT Specialist & System Admin
           </p>
           <p className="text-lg text-subtext0 mb-8 max-w-2xl mx-auto leading-relaxed">
-            I'm a System Administrator and DevOps Engineer who specializes in
-            automating infrastructure, optimizing CI/CD pipelines, and ensuring
-            reliable, efficient software and system operations.
+            I'm an IT Specialist and System Administrator who specializes in
+            automating system operations, and ensuring reliable and secure
+            system performance. With expertise in Linux, cloud technologies, and
+            automation, I help mantain and enhance critical IT environments.
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">
@@ -69,7 +70,7 @@ const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="/JorgeBayuelo_DevOpsResume.pdf"
+              href="/JorgeBayuelo_IT_Specialist.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
