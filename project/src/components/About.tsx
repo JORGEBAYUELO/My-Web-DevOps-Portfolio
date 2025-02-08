@@ -22,22 +22,19 @@ const About = () => {
           <div className="space-y-6 text-left text-subtext1">
             <p className="leading-relaxed">
               I've always been the kind of person who loves solving technical
-              puzzles. My journey with technology puzzles. My journey with
-              technology started when I was 13 years old, tinkering with
-              computers, troubleshooting issues, and eventually building my own
-              PCs. That hands-on passion for IT naturally grew over the years,
-              leading me to explore troubleshooting issues, and eventually
-              building my own PCs. That hands-on curiosity led me to explore
-              Linux, system administration, and cloud technologies.
+              puzzles. My journey with technology started when I was 13 years
+              old, tinkering with computers, troubleshooting issues, and
+              eventually building my own PCs. That hands-on passion for IT
+              naturally grew over the years, leading me to explore Linux, system
+              administration, and cloud technologies.
             </p>
 
             <p className="leading-relaxed">
               I originally worked as a Technical Artist in Unreal Engine, where
-              I spent years troubleshooting complex I spent years
-              troubleshooting complex issues, automating workflows, and
-              optimizing 3D environments. But over time, I realized my real
-              passion was in IT Support and System Administration, so I made the
-              leap into the field.
+              I spent years troubleshooting complex issues, automating
+              workflows, and optimizing 3D environments. But over time, I
+              realized my real passion was in IT Support and System
+              Administration, so I made the leap into the field.
             </p>
 
             <p className="leading-relaxed">
