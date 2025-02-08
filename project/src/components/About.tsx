@@ -1,11 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   return (
@@ -21,28 +21,45 @@ const About = () => {
           <h2 className="text-3xl font-bold text-text mb-8">About Me</h2>
           <div className="space-y-6 text-left text-subtext1">
             <p className="leading-relaxed">
-              I'm a Junior System Administrator and DevOps Engineer transitioning from a decade-long career as a 
-              technical 3D artist into the dynamic world of IT. My journey is fueled by a passion for technology, 
-              creative problem-solving, and a commitment to continuous learning in this fast-evolving field.
+              I've always been the kind of person who loves solving technical
+              puzzles. My journey with technology puzzles. My journey with
+              technology started when I was 13 years old, tinkering with
+              computers, troubleshooting issues, and eventually building my own
+              PCs. That hands-on passion for IT naturally grew over the years,
+              leading me to explore troubleshooting issues, and eventually
+              building my own PCs. That hands-on curiosity led me to explore
+              Linux, system administration, and cloud technologies.
             </p>
-            
+
             <p className="leading-relaxed">
-              I have recently obtained my AWS Certified Cloud Practitioner certification, marking an important 
-              milestone in my cloud computing journey. Currently, I'm focused on pursuing RHCSA certification to 
-              strengthen my system administration expertise, gaining more hands-on experience with AWS cloud 
-              computing, and building the foundational skills required for a successful DevOps career.
+              I originally worked as a Technical Artist in Unreal Engine, where
+              I spent years troubleshooting complex I spent years
+              troubleshooting complex issues, automating workflows, and
+              optimizing 3D environments. But over time, I realized my real
+              passion was in IT Support and System Administration, so I made the
+              leap into the field.
             </p>
-            
+
             <p className="leading-relaxed">
-              My background in 3D artistry has honed my ability to approach challenges with a unique perspective, 
-              combining creativity with logical problem-solving. Paired with strong communication and leadership 
-              skills, I'm equipped to tackle complex IT challenges and contribute to dynamic, collaborative 
-              environments.
+              Now, I focus on keeping systems running smoothly, solving IT
+              problems, and making technology work better for people. I've
+              earned my AWS Certified Cloud Practitioner and CompTIA A+
+              certifications, and I'm currently working on my CompTIA Network+
+              to strengthen my networking knowledge.
             </p>
-            
+
             <p className="leading-relaxed">
-              I'm excited to grow in both system administration and DevOps roles, leveraging my skills to deliver 
-              innovative solutions and drive technological excellence.
+              I've had hands-on experience with Linux system administration, AWS
+              cloud services, IT troubleshooting, and system support. I love
+              digging into technical issues, figuring things out, and making IT
+              operations more efficient.
+            </p>
+
+            <p className="leading-relaxed">
+              Right now, I'm looking for opportunities in IT Support and System
+              Administration, but my long-term goal is to grow into a DevOps
+              Engineer, where I can combine my love for automation, cloud
+              computing, and problem-solving.
             </p>
           </div>
         </motion.div>
