@@ -1,36 +1,39 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Github, ExternalLink } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: 'Cloud Infrastructure Automation',
-    description: 'Terraform modules for multi-cloud infrastructure with automated deployment pipelines.',
-    tags: ['Terraform', 'AWS', 'CI/CD', 'Python'],
-    github: 'https://github.com',
-    demo: '#'
+    title: "Windows Active Directory Home Lab Setup",
+    description:
+      "A virtual lab environment for mastering Active Directory setup and management.",
+    tags: ["Active Directory", "Windows Server", "VMware", "osTicket"],
+    github: "https://github.com/JORGEBAYUELO/ActiveDirectoryHomeLab",
+    demo: "#",
   },
   {
-    title: 'Kubernetes Cluster Management',
-    description: 'Custom Kubernetes operators and automation tools for cluster management.',
-    tags: ['Kubernetes', 'Go', 'Docker', 'Helm'],
-    github: 'https://github.com',
-    demo: '#'
+    title: "Virtual Home Network Setup Using VMware Workstation and Fedora 41",
+    description:
+      "Simulated home network using virtual machines for networking and security practice.",
+    tags: ["Linux", "Fedora", "VMware", "Wireshark"],
+    github: "https://github.com/JORGEBAYUELO/VirtualHomeNetwork",
+    demo: "#",
   },
   {
-    title: 'Monitoring Dashboard',
-    description: 'Real-time monitoring dashboard with Prometheus and Grafana integration.',
-    tags: ['Prometheus', 'Grafana', 'React', 'Node.js'],
-    github: 'https://github.com',
-    demo: '#'
-  }
+    title: "My Linux Tools Automation Bash Script",
+    description:
+      "Custom Bash script to automate the installation of essential Linux tools for DevOps.",
+    tags: ["Linux", "Bash", "CLI"],
+    github: "https://github.com/JORGEBAYUELO/MyLinuxTools",
+    demo: "#",
+  },
 ];
 
 const Projects = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   return (
@@ -39,8 +42,11 @@ const Projects = () => {
         <h2 className="text-3xl font-bold text-text mb-12 text-center">
           Featured Projects
         </h2>
-        
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div
+          ref={ref}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -55,7 +61,7 @@ const Projects = () => {
               <p className="text-subtext1 mb-6 text-sm">
                 {project.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, tagIndex) => (
                   <span
