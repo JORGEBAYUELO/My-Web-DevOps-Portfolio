@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, Youtube, FileText } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -55,6 +55,10 @@ const Hero = () => {
             <SocialLink
               href="mailto:jorge3design@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect!"
               icon={<Mail />}
+            />
+            <SocialLink
+              href="https://www.youtube.com/@jbtechhub"
+              icon={<Youtube />}
             />
           </div>
 
