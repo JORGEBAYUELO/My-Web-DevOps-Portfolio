@@ -1,33 +1,38 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Terminal } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Terminal } from "lucide-react";
 
 const menuItems = [
-  { title: 'Home', href: '#home' },
-  { title: 'About', href: '#about' },
-  { title: 'Projects', href: '#projects' },
-  { title: 'Skills', href: '#skills' },
-  { title: 'Contact', href: '#contact' }
+  { title: "Home", href: "#home" },
+  { title: "About", href: "#about" },
+  { title: "Projects", href: "#projects" },
+  { title: "Skills", href: "#skills" },
+  { title: "My Blog", href: "https://jorgebayuelo.blog/" },
+  { title: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
     e.preventDefault();
-    if (href === '#home') {
+    if (href === "#home") {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     } else {
       const element = document.querySelector(href);
       if (element) {
         const navbarHeight = 64; // 4rem or h-16
         const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - navbarHeight;
 
         window.scrollTo({
           top: offsetPosition,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }
     }
@@ -39,7 +44,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <motion.a
             href="#home"
-            onClick={(e) => scrollToSection(e, '#home')}
+            onClick={(e) => scrollToSection(e, "#home")}
             className="flex items-center space-x-2 text-mauve hover:text-text transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
