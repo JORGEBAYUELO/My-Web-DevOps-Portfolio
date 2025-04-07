@@ -5,11 +5,20 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Windows Active Directory Home Lab Setup",
+    title: "Automated AWS Terraform Infrastructure",
     description:
-      "A virtual lab environment for mastering Active Directory setup and management.",
-    tags: ["Active Directory", "Windows Server", "VMware", "osTicket"],
-    github: "https://github.com/JORGEBAYUELO/ActiveDirectoryHomeLab",
+      "Automated AWS infrastructure setup using Terraform with EC2, S3, and DynamoDB.",
+    tags: [
+      "Terraform",
+      "AWS EC2",
+      "AWS S3",
+      "DynamoDB",
+      "SSH",
+      "Security Groups",
+      "Bash Script",
+    ],
+    github:
+      "https://github.com/JORGEBAYUELO/Automated-AWS-Terraform-Infrastructure",
     demo: "#",
   },
   {
@@ -21,11 +30,11 @@ const projects = [
     demo: "#",
   },
   {
-    title: "My Linux Tools Automation Bash Script",
+    title: "Windows Active Directory Home Lab Setup",
     description:
-      "Custom Bash script to automate the installation of essential Linux tools for DevOps.",
-    tags: ["Linux", "Bash", "CLI"],
-    github: "https://github.com/JORGEBAYUELO/MyLinuxTools",
+      "A virtual lab environment for mastering Active Directory setup and management.",
+    tags: ["Active Directory", "Windows Server", "VMware", "osTicket"],
+    github: "https://github.com/JORGEBAYUELO/ActiveDirectoryHomeLab",
     demo: "#",
   },
 ];
