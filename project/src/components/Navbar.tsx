@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Terminal } from "lucide-react";
 
 const menuItems = [
-  { title: "Home", href: "#home" },
-  { title: "About", href: "#about" },
-  { title: "Projects", href: "#projects" },
-  { title: "Skills", href: "#skills" },
-  { title: "My Blog", href: "https://jorgebayuelo.blog/" },
-  { title: "Contact", href: "#contact" },
+  { title: "Home", href: "#home", isExternal: false },
+  { title: "About", href: "#about", isExternal: false },
+  { title: "Projects", href: "#projects", isExternal: false },
+  { title: "Skills", href: "#skills", isExternal: false },
+  { title: "My Blog", href: "https://jorgebayuelo.blog/", isExternal: true },
+  { title: "Contact", href: "#contact", isExternal: false },
 ];
 
 const Navbar = () => {
@@ -38,6 +38,22 @@ const Navbar = () => {
     }
   };
 
+  // Handle click based on whether link is external or internal
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+    isExternal: boolean
+  ) => {
+    if (isExternal) {
+      // Allow the default behavior for external links
+      // This will open the link in the current tab
+      return;
+    }
+
+    // Use the scroll function for internal links
+    scrollToSection(e, href);
+  };
+
   return (
     <nav className="fixed w-full bg-base/80 backdrop-blur-sm z-50 border-b border-surface0">
       <div className="max-w-6xl mx-auto px-4">
@@ -58,10 +74,12 @@ const Navbar = () => {
               <motion.a
                 key={item.title}
                 href={item.href}
-                onClick={(e) => scrollToSection(e, item.href)}
+                onClick={(e) => handleClick(e, item.href, item.isExternal)}
                 className="text-subtext1 hover:text-mauve hover:bg-base/60 px-4 py-2 rounded-lg transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                target={item.isExternal ? "_blank" : ""}
+                rel={item.isExternal ? "noopener noreferrer" : ""}
               >
                 {item.title}
               </motion.a>
