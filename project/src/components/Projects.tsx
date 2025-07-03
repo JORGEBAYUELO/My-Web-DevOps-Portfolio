@@ -5,6 +5,37 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Secure and Automated CI/CD Deployment in AWS",
+    description:
+      "Secure and Automated CI/CD Deployment of a React APP with Secrets Management on AWS.",
+    tags: [
+      "Terraform",
+      "AWS EC2",
+      "AWS Secret Store Management",
+      "GitHub Actions",
+      "Docker",
+      "SSH",
+      "Security Groups",
+    ],
+    github: "https://github.com/JORGEBAYUELO/secure-and-automated-cicd",
+    demo: "https://github.com/JORGEBAYUELO/secure-and-automated-cicd/blob/main/liveapp.png",
+  },
+  {
+    title: "React App CI/CD AWS S3 Deployment",
+    description:
+      "React App CI/CD Pipeline With AWS S3 + CloudFront + GitHub Actions + Terraform + WAF",
+    tags: [
+      "Terraform",
+      "AWS S3",
+      "AWS CloudFront",
+      "GitHub Actions",
+      "AWS WAF",
+      "React",
+    ],
+    github: "https://github.com/JORGEBAYUELO/react-s3-deploy",
+    demo: "https://github.com/JORGEBAYUELO/react-s3-deploy/blob/main/screenshot.png",
+  },
+  {
     title: "Automated AWS Terraform Infrastructure",
     description:
       "Automated AWS infrastructure setup using Terraform with EC2, S3, and DynamoDB.",
