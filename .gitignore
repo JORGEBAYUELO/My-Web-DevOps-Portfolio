@@ -1,2 +1,3 @@
 # Ignore Directories
 oldfiles/
+.bolt/
