@@ -52,22 +52,6 @@ const projects = [
       "https://github.com/JORGEBAYUELO/Automated-AWS-Terraform-Infrastructure",
     demo: "#",
   },
-  {
-    title: "Virtual Home Network Setup Using VMware Workstation and Fedora 41",
-    description:
-      "Simulated home network using virtual machines for networking and security practice.",
-    tags: ["Linux", "Fedora", "VMware", "Wireshark"],
-    github: "https://github.com/JORGEBAYUELO/VirtualHomeNetwork",
-    demo: "#",
-  },
-  {
-    title: "Windows Active Directory Home Lab Setup",
-    description:
-      "A virtual lab environment for mastering Active Directory setup and management.",
-    tags: ["Active Directory", "Windows Server", "VMware", "osTicket"],
-    github: "https://github.com/JORGEBAYUELO/ActiveDirectoryHomeLab",
-    demo: "#",
-  },
 ];
 
 const Projects = () => {
