@@ -49,11 +49,11 @@ const Hero = () => {
               icon={<Github />}
             />
             <SocialLink
-              href="https://www.linkedin.com/in/jorge-bayuelo/"
+              href="https://www.linkedin.com/in/jorgebayuelo/"
               icon={<Linkedin />}
             />
             <SocialLink
-              href="mailto:jorge3design@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect!"
+              href="mailto:jlbayuelo@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect!"
               icon={<Mail />}
             />
             <SocialLink
