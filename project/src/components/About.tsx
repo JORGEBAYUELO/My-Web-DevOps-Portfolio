@@ -41,29 +41,6 @@ const About = () => {
               I'm passionate about building resilient systems that scale efficiently, reduce manual effort,
               effort, and align with best practices.
             </p>
-
-            <p className="leading-relaxed">
-              I’m passionate about bridging the gap between development and
-              operations by ensuring reliable, automated, and secure
-              deployments. Whether it’s designing highly available AWS
-              architectures, troubleshooting Linux-based systems, or optimizing
-              CI/CD pipelines, I thrive on solving challenging infrastructure
-              problems that others may struggle with.
-            </p>
-
-            <p className="leading-relaxed">
-              What sets me apart is my ability to troubleshoot across multiple
-              environments, from Linux servers to cloud-based deployments. My
-              expertise in AWS, Terraform, Bash scripting, and system
-              administration allows me to deliver scalable, efficient, and
-              resilient infrastructures.
-            </p>
-
-            <p className="leading-relaxed">
-              As I continue refining my DevOps toolkit, I look forward to
-              leveraging my skills to automate, optimize, and innovate within
-              cloud environments, making technology work smarter, not harder.
-            </p>
           </div>
         </motion.div>
       </div>
