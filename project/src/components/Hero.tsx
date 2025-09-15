@@ -34,7 +34,7 @@ const Hero = () => {
             Hi, I'm Jorge Bayuelo
           </h1>
           <p className="text-2xl md:text-3xl text-subtext1 mb-4">
-            DevOps Engineer & System Admin
+            Cloud DevOps Engineer
           </p>
           <p className="text-lg text-subtext0 mb-8 max-w-2xl mx-auto leading-relaxed">
             I specialize in automation, cloud computing, and system reliability,
