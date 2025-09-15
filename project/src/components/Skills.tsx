@@ -3,16 +3,17 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const skills = [
-  { name: "Linux/Unix Systems", level: 88 },
+  { name: "Linux/Unix Systems", level: 90 },
   { name: "Bash Scripting", level: 85 },
   { name: "AWS/Cloud Platforms", level: 90 },
-  { name: "Active Directory", level: 85 },
+  { name: "Kubernetes", level: 80 },
+  { name: "Terraform", level: 85 },
   { name: "Docker", level: 95 },
   { name: "CI/CD", level: 90 },
   { name: "Infrastructure as Code", level: 88 },
-  { name: "Python/Go", level: 82 },
-  { name: "Monitoring & Logging", level: 87 },
-  { name: "Security & Compliance", level: 85 },
+  { name: "Python", level: 75 },
+  { name: "Monitoring & Logging", level: 85 },
+  { name: "Security & Compliance", level: 90 },
 ];
 
 const Skills = () => {
