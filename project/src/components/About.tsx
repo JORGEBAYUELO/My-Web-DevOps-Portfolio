@@ -21,30 +21,25 @@ const About = () => {
           <h2 className="text-3xl font-bold text-text mb-8">About Me</h2>
           <div className="space-y-6 text-left text-subtext1">
             <p className="leading-relaxed">
-              My journey into DevOps started with a strong technical foundation
-              in 3D artistry and system administration, where I mastered
-              troubleshooting, scripting, and infrastructure management. Over
-              time, I transitioned into the DevOps field, combining my passion
-              for automation, cloud technologies, and system optimization to
-              streamline workflows and enhance operational efficiency.
+              I'm a DevOps Engineer with 4+ years of experience building scalable cloud
+              infrastructure, automating deployments, and streamlining CI/CD workflows. My expertise
+              spans AWS, Terraform, Kubernetes, Linux systems, and Bash scripting, with a strong
+              focus on automation, reliability, and security.
             </p>
 
             <p className="leading-relaxed">
-              One of my recent DevOps accomplishments was deploying a secure and
-              scalable AWS infrastructure using Terraform. I successfully
-              automated AWS resource provisioning, resolved S3 bucket versioning
-              and security group configuration issues, and optimized EC2
-              instance connectivity. This project reinforced my expertise in
-              Infrastructure as Code (IaC), AWS security best practices, and
-              cloud automation.
+              I've designed and deployed secure, production-ready AWS environments using
+              Infrastructure as Code, optimized EC2 networking and S3 configuration, and
+              implemented CI/CD pipelines that reduce deployment friction while increasing stability. I
+              thrive on troubleshooting complex infrastructure challenges and ensuring seamless
+              collaboration between development and operations.
             </p>
 
             <p className="leading-relaxed">
-              As part of my continuous learning, I have been preparing for the
-              CompTIA Network+ certification, diving deep into networking
-              fundamentals, security, and troubleshooting. This has strengthened
-              my ability to design and maintain reliable network architectures,
-              ensuring seamless connectivity for cloud-based environments.
+              What sets me apart is a strong foundation in system administration and hands-on 
+              problem solving across Linux servers, cloud platforms, and containerized environments.
+              I'm passionate about building resilient systems that scale efficiently, reduce manual effort,
+              effort, and align with best practices.
             </p>
 
             <p className="leading-relaxed">
