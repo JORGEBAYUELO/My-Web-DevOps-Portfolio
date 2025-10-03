@@ -18,7 +18,7 @@ const projects = [
       "Security Groups",
     ],
     github: "https://github.com/JORGEBAYUELO/secure-and-automated-cicd",
-    demo: "https://github.com/JORGEBAYUELO/secure-and-automated-cicd/blob/main/liveapp.png",
+    demo: "https://jorgebayuelo.blog/posts/secure-and-automated-ci-cd-deployment-of-a-react-app-with-secrets-management-on-aws/",
   },
   {
     title: "React App CI/CD AWS S3 Deployment",
@@ -33,7 +33,7 @@ const projects = [
       "React",
     ],
     github: "https://github.com/JORGEBAYUELO/react-s3-deploy",
-    demo: "https://github.com/JORGEBAYUELO/react-s3-deploy/blob/main/screenshot.png",
+    demo: "https://jorgebayuelo.blog/posts/from-react-to-resilience---how-i-deployed-my-app-on-aws-using-cicd-terraform-and-waf/",
   },
   {
     title: "Automated AWS Terraform Infrastructure",
@@ -50,7 +50,7 @@ const projects = [
     ],
     github:
       "https://github.com/JORGEBAYUELO/Automated-AWS-Terraform-Infrastructure",
-    demo: "#",
+    demo: "https://jorgebayuelo.blog/posts/how-i-built-a-fully-automated-aws-infrastructure-using-terraform/",
   },
 ];
 
@@ -114,7 +114,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                 >
                   <ExternalLink size={18} />
-                  <span>Live Demo</span>
+                  <span>Read About It</span>
                 </a>
               </div>
             </motion.div>
