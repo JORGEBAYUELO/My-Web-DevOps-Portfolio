@@ -21,25 +21,26 @@ const About = () => {
           <h2 className="text-3xl font-bold text-text mb-8">About Me</h2>
           <div className="space-y-6 text-left text-subtext1">
             <p className="leading-relaxed">
-              I'm a DevOps Engineer with 4+ years of experience building scalable cloud
-              infrastructure, automating deployments, and streamlining CI/CD workflows. My expertise
-              spans AWS, Terraform, Kubernetes, Linux systems, and Bash scripting, with a strong
-              focus on automation, reliability, and security.
+              I’m a Cloud DevOps Engineer passionate about building infrastructure that helps teams move faster, deploy confidently, 
+              and operate reliably. My focus is on bridging the gap between development and operations, designing systems that are 
+              scalable, secure, and maintainable in production environments.
             </p>
 
             <p className="leading-relaxed">
-              I've designed and deployed secure, production-ready AWS environments using
-              Infrastructure as Code, optimized EC2 networking and S3 configuration, and
-              implemented CI/CD pipelines that reduce deployment friction while increasing stability. I
-              thrive on troubleshooting complex infrastructure challenges and ensuring seamless
-              collaboration between development and operations.
+              I help organizations streamline delivery pipelines, improve reliability, and reduce operational friction by combining 
+              automation, Infrastructure as Code, and cloud best practices. My toolkit includes AWS, Terraform, Kubernetes, Linux, 
+              Docker, and CI/CD pipelines, with an emphasis on security, efficiency, and continuous improvement.
             </p>
 
             <p className="leading-relaxed">
-              What sets me apart is a strong foundation in system administration and hands-on 
-              problem solving across Linux servers, cloud platforms, and containerized environments.
-              I'm passionate about building resilient systems that scale efficiently, reduce manual effort,
-              effort, and align with best practices.
+              I've worked on building and optimizing AWS environments, automating deployment workflows, and managing 
+              containerized systems that support business-critical applications. My background in Linux systems administration and 
+              troubleshooting allows me to diagnose complex infrastructure issues and design solutions that scale sustainably.
+            </p>
+
+            <p className="leading-relaxed">
+              What motivates me is creating systems that empower teams, making delivery faster, processes smoother, and systems 
+              more resilient. I thrive in environments that value collaboration, transparency, and a culture of learning.
             </p>
           </div>
         </motion.div>
