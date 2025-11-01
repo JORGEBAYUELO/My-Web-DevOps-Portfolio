@@ -5,6 +5,40 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Terraform AWS DevOps Pipeline EKS ECR Helm and Hashicorp Vault",
+    description:
+      "Full end-toend DevOps pipeline implemented and demostrated with Terraform, AWS (ECR, EKS), Helm, ArgoCD, Prometheus, Grafana, and Hashicorp Vault.",
+    tags: [
+      "Terraform",
+      "AWS EC2, S3, ECR, EKS",
+      "ArgoCD",
+      "GitHub Actions",
+      "Docker",
+      "Helm",
+      "Prometheus",
+      "Grafana",
+      "Hashicorp Vault",
+    ],
+    github: "https://github.com/JORGEBAYUELO/terraform-aws-devops-pipeline-eks-ecr-helm-vault",
+    demo: "https://jorgebayuelo.blog/posts/building-a-full-devops-pipeline-on-aws-with-terraform-eks-ecr-helm-prometheus-grafana-and-vault/",
+  },
+  {
+    title: "React App on AWS EKS with ArgoCD (GitOps + CI/CD)",
+    description:
+      "Deployoment of React Web Application on AWS EKS (Elastic Kubernetes Service) using ArgoCD for GitOps-based deployment.",
+    tags: [
+      "Kubernetes",
+      "AWS EKS",
+      "AWS EC2",
+      "GitHub Actions",
+      "Docker",
+      "ArgoCD",
+      "Nginx",
+    ],
+    github: "https://github.com/JORGEBAYUELO/Catppuccino_App",
+    demo: "https://jorgebayuelo.blog/posts/react-app-on-aws-eks-with-aegocd-gitops-+-cicd/",
+  },
+  {
     title: "Secure and Automated CI/CD Deployment in AWS",
     description:
       "Secure and Automated CI/CD Deployment of a React APP with Secrets Management on AWS.",
@@ -36,7 +70,7 @@ const projects = [
     demo: "https://jorgebayuelo.blog/posts/from-react-to-resilience---how-i-deployed-my-app-on-aws-using-cicd-terraform-and-waf/",
   },
   {
-    title: "Automated AWS Terraform Infrastructure",
+    title: "AWS Infrastructure Automation with Terraform",
     description:
       "Automated AWS infrastructure setup using Terraform with EC2, S3, and DynamoDB.",
     tags: [
@@ -51,6 +85,24 @@ const projects = [
     github:
       "https://github.com/JORGEBAYUELO/Automated-AWS-Terraform-Infrastructure",
     demo: "https://jorgebayuelo.blog/posts/how-i-built-a-fully-automated-aws-infrastructure-using-terraform/",
+  },
+  {
+    title: "DevOps Network Lab With Raspberry Pi 5",
+    description:
+      "Built a fully automated, observable, and secure home network monitoring stack using Raspberry Pi 5.",
+    tags: [
+      "DNS",
+      "DHCP",
+      "Docker",
+      "Pi-hole",
+      "VPN, WireGuard",
+      "Prometheus",
+      "Grafana",
+      "SSH",
+    ],
+    github:
+      "https://github.com/JORGEBAYUELO/network-lab-devops",
+    demo: "https://jorgebayuelo.blog/posts/building-my-first-pi-hole-powered-home-network-monitor-with-grafana-and-prometheus-on-a-raspberry-pi/",
   },
 ];
 
