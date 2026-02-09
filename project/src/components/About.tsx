@@ -21,26 +21,21 @@ const About = () => {
           <h2 className="text-3xl font-bold text-text mb-8">About Me</h2>
           <div className="space-y-6 text-left text-subtext1">
             <p className="leading-relaxed">
-              I’m a Cloud DevOps Engineer passionate about building infrastructure that helps teams move faster, deploy confidently, 
-              and operate reliably. My focus is on bridging the gap between development and operations, designing systems that are 
-              scalable, secure, and maintainable in production environments.
+              I’m an IT Professional with a strong foundation in systems administration, user support, and infrastructure operations.
+              I focus on keeping systems stable, secure, and efficient while supporting end users and business critical services 
+              in real world environments.
             </p>
 
             <p className="leading-relaxed">
-              I help organizations streamline delivery pipelines, improve reliability, and reduce operational friction by combining 
-              automation, Infrastructure as Code, and cloud best practices. My toolkit includes AWS, Terraform, Kubernetes, Linux, 
-              Docker, and CI/CD pipelines, with an emphasis on security, efficiency, and continuous improvement.
+              My background spans desktop support, Linux and Windows system administration, and cloud based infrastructure.
+              I enjoy working close to the systems themselves, troubleshooting issues, improving reliability, and 
+              automating repetitive tasks to reduce operational friction.
             </p>
 
             <p className="leading-relaxed">
-              I've worked on building and optimizing AWS environments, automating deployment workflows, and managing 
-              containerized systems that support business-critical applications. My background in Linux systems administration and 
-              troubleshooting allows me to diagnose complex infrastructure issues and design solutions that scale sustainably.
-            </p>
-
-            <p className="leading-relaxed">
-              What motivates me is creating systems that empower teams, making delivery faster, processes smoother, and systems 
-              more resilient. I thrive in environments that value collaboration, transparency, and a culture of learning.
+              I Bring a practical, hands-on mindset to IT operations, understanding how systems behave in production, responding 
+              calmly under presure, and continuously improving processes through documentation and automation. I'm especially interested
+              in roles where I can grow deeper into systems administration while contributing to operational excellence.
             </p>
           </div>
         </motion.div>
