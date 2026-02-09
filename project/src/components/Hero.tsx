@@ -53,7 +53,7 @@ const Hero = () => {
               icon={<Linkedin />}
             />
             <SocialLink
-              href="mailto:jlbayuelo@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect!"
+              href="mailto:jorgebayuelontech@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect!"
               icon={<Mail />}
             />
             <SocialLink
