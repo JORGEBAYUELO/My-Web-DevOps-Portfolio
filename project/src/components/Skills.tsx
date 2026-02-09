@@ -4,16 +4,20 @@ import { useInView } from "react-intersection-observer";
 
 const skills = [
   { name: "Linux/Unix Systems", level: 90 },
+  { name: "Windows Systems (Desktop & Server)", level: 85 },
+  { name: "User & Access Management (Permissions, SSH, IAM concepts)", level: 85 },
+  { name: "System Troubleshooting & Incident Resolution", level: 90 },
+  { name: "Hardware & Software Support", level: 85 },
+  { name: "Networking Fundamentals (DNS, TCP/IP, Firewalls)", level: 75 },
   { name: "Bash Scripting", level: 85 },
-  { name: "AWS/Cloud Platforms", level: 90 },
-  { name: "Kubernetes", level: 80 },
-  { name: "Terraform", level: 85 },
-  { name: "Docker", level: 95 },
-  { name: "CI/CD", level: 90 },
-  { name: "Infrastructure as Code", level: 88 },
-  { name: "Python", level: 75 },
-  { name: "Monitoring & Logging", level: 85 },
-  { name: "Security & Compliance", level: 90 },
+  { name: "Python (Automation & Utilities)", level: 75 },
+  { name: "AWS/Cloud Platforms", level: 80 },
+  { name: "Infrastructure as Code (Terraform)", level: 75 },
+  { name: "Docker", level: 80 },
+  { name: "CI/CD", level: 75 },
+  { name: "Kubernetes (Foundational)", level: 70 },
+  { name: "Monitoring & Logging", level: 80 },
+  { name: "Security Fundamentals & Best Practices", level: 80 },
 ];
 
 const Skills = () => {
