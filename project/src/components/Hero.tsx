@@ -74,7 +74,7 @@ const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="/JorgeBayuelo_DevOps_Engineer.pdf"
+              href="/JorgeBayuelo_IT_Specialist.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
