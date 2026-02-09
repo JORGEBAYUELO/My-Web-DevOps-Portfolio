@@ -34,13 +34,13 @@ const Hero = () => {
             Hi, I'm Jorge Bayuelo
           </h1>
           <p className="text-2xl md:text-3xl text-subtext1 mb-4">
-            Cloud DevOps Engineer
+            IT Specialist & Systems Administrator
           </p>
           <p className="text-lg text-subtext0 mb-8 max-w-2xl mx-auto leading-relaxed">
-            I specialize in automation, cloud computing, and system reliability,
-            ensuring secure and high-performing IT environments. With expertise
-            in Linux, AWS, Infrastructure as Code, and CI/CD pipelines, I help
-            streamline operations and enhance scalability.
+            I specialize in Linux and Windows systems administration, IT support, and infrastructure operations.
+            My experience inlcudes troubleshooting production issues, managing access and permissions, and
+            supporting cloud-based environments on AWS. I'm focused on improving reliability, reducing
+            manual work through automation, and applying security best practices across IT systems.
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">
