@@ -19,20 +19,31 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-mantle">
+    <section id="contact" className="py-24 relative">
+
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-text mb-12 text-center">
+        {/* Title */}
+        <h2 className="text-3xl md:text-4xl font-bold text-text mb-12 text-center">
           Get In Touch
         </h2>
         
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        {/* FORM CONTAINER */}
+        <form onSubmit={handleSubmit(onSubmit)} className="glass glass-elevated relative rounded-2xl p-6 md:p-8 space-y-6">
+
+          {/* SINGLE CENTER LIGHT */}
+          <div className="absolute inset-0 rounded-2xl pointer-events-none z-10">
+          
+            <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-[500px] h-[260px] bg-accent/5 blur-[120px] rounded-full" />
+
+          </div>
+          {/* NAME */}
           <div>
-            <label htmlFor="name" className="block text-subtext1 mb-2">
+            <label className="block text-subtext1 mb-2">
               Name
             </label>
             <input
               {...register('name', { required: 'Name is required' })}
-              className="w-full px-4 py-3 rounded-lg bg-base border border-surface0 text-text focus:outline-none focus:border-mauve transition-colors"
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-text focus:outline-none focus:border-accent focus:shadow-glow transition-all"
               placeholder="Your name"
             />
             {errors.name && (
@@ -40,8 +51,9 @@ const Contact = () => {
             )}
           </div>
 
+          {/* EMAIL */}
           <div>
-            <label htmlFor="email" className="block text-subtext1 mb-2">
+            <label className="block text-subtext1 mb-2">
               Email
             </label>
             <input
@@ -52,7 +64,7 @@ const Contact = () => {
                   message: 'Invalid email address'
                 }
               })}
-              className="w-full px-4 py-3 rounded-lg bg-base border border-surface0 text-text focus:outline-none focus:border-mauve transition-colors"
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-text focus:outline-none focus:border-accent focus:shadow-glow transition-all"
               placeholder="your@email.com"
             />
             {errors.email && (
@@ -60,14 +72,15 @@ const Contact = () => {
             )}
           </div>
 
+          {/* MESSAGE */}
           <div>
-            <label htmlFor="message" className="block text-subtext1 mb-2">
+            <label className="block text-subtext1 mb-2">
               Message
             </label>
             <textarea
               {...register('message', { required: 'Message is required' })}
               rows={5}
-              className="w-full px-4 py-3 rounded-lg bg-base border border-surface0 text-text focus:outline-none focus:border-mauve transition-colors"
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-text focus:outline-none focus:border-accent focus:shadow-glow transition-all resize-none"
               placeholder="Your message"
             />
             {errors.message && (
@@ -75,15 +88,16 @@ const Contact = () => {
             )}
           </div>
 
+          {/* BUTTON */}
           <motion.button
             type="submit"
             disabled={isSubmitting}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full py-3 bg-mauve text-base rounded-lg font-medium hover:bg-opacity-90 transition-colors flex items-center justify-center space-x-2 disabled:opacity-70"
+            className="w-full py-3 glass glass-hover glass-primary font-medium flex items-center justify-center gap-2 disabled:opacity-70"
           >
             {isSubmitting ? (
-              <div className="w-6 h-6 border-2 border-base border-t-transparent rounded-full animate-spin" />
+              <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
             ) : (
               <>
                 <span>Send Message</span>

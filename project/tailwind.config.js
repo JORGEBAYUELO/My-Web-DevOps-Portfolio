@@ -28,9 +28,16 @@ export default {
         surface1: '#45475a',
         surface0: '#313244',
         base: '#1e1e2e',
+        accent: '#00ff9c',
+        accentSoft: 'rgba(0, 255, 156, 0.15)',
         mantle: '#181825',
         crust: '#11111b'
       },
+      boxShadow: {
+        glow: '0 0 20px rgba(0,255,156,0.25)',
+        glowStrong: '0 0 40px rgba(0,255,156,0.35)',
+      },
+
       animation: {
         'gradient': 'gradient 8s linear infinite',
       },

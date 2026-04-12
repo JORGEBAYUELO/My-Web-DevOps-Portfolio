@@ -55,27 +55,30 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-base/80 backdrop-blur-sm z-50 border-b border-surface0">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <nav className="fixed w-full z-50 px-4 pt-4">
+      <div className="max-w-6xl mx-auto">
+        {/* GLASS NAV CONTAINER */}
+        <div className="glass flex items-center justify-between px-5 py-2 rounded-xl border border-white/10 backdrop-blur-xl bg-white/[0.03]">
+        {/* LOGO */}
           <motion.a
             href="#home"
             onClick={(e) => scrollToSection(e, "#home")}
-            className="flex items-center space-x-2 text-mauve hover:text-text transition-colors"
+            className="flex items-center space-x-2 text-accent hover:text-text transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Terminal size={24} />
-            <span className="font-bold text-lg">JB</span>
+            <Terminal size={18} />
+            <span className="font-semibold text-lg tracking-wide">JB</span>
           </motion.a>
 
-          <div className="hidden md:flex space-x-4">
+          {/* MENU */}
+          <div className="hidden md:flex items-center gap-2">
             {menuItems.map((item) => (
               <motion.a
                 key={item.title}
                 href={item.href}
                 onClick={(e) => handleClick(e, item.href, item.isExternal)}
-                className="text-subtext1 hover:text-mauve hover:bg-base/60 px-4 py-2 rounded-lg transition-all duration-300"
+                className="px-4 py-2 rounded-lg text-subtext1 hover:text-accent hover:bg-white/5 hover-lift transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 target={item.isExternal ? "_blank" : ""}

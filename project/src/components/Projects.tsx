@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Terraform AWS DevOps Pipeline EKS ECR Helm and Hashicorp Vault",
     description:
-      "Full end-toend DevOps pipeline implemented and demostrated with Terraform, AWS (ECR, EKS), Helm, ArgoCD, Prometheus, Grafana, and Hashicorp Vault.",
+      "Full end-to-end DevOps pipeline implemented and demonstrated with Terraform, AWS (ECR, EKS), Helm, ArgoCD, Prometheus, Grafana, and Hashicorp Vault.",
     tags: [
       "Terraform",
       "AWS EC2, S3, ECR, EKS",
@@ -25,7 +25,7 @@ const projects = [
   {
     title: "React App on AWS EKS with ArgoCD (GitOps + CI/CD)",
     description:
-      "Deployoment of React Web Application on AWS EKS (Elastic Kubernetes Service) using ArgoCD for GitOps-based deployment.",
+      "Deployment of React Web Application on AWS EKS (Elastic Kubernetes Service) using ArgoCD for GitOps-based deployment.",
     tags: [
       "Kubernetes",
       "AWS EKS",
@@ -113,60 +113,79 @@ const Projects = () => {
   });
 
   return (
-    <section id="projects" className="py-20 bg-mantle">
+    <section id="projects" className="py-24 relative">
+      {/* PROJECTS LIGHT SYSTEM */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+      
+        {/* MAIN AMBIENT LIGHT (centered behind cards) */}
+        <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-accent/10 blur-[140px] rounded-full" />
+
+        {/* SECONDARY LIGHT (slight variation for depth) */}
+        <div className="absolute top-[30%] left-[20%] w-[400px] h-[400px] bg-sky/6 blur-[120px] rounded-full" />
+
+      </div>
+      
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-text mb-12 text-center">
+        {/* Title upgraded */}
+        <h2 className="text-3xl md:text-4xl font-bold text-text mb-16 text-center">
           Featured Projects
         </h2>
 
         <div
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-base/40 backdrop-blur-sm rounded-xl p-6 hover:bg-base/60 transition-colors duration-300 border border-surface0"
+              whileHover={{ y: -3 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="glass glass-elevated p-6 flex flex-col justify-between min-h-[320px] transform-gpu"
             >
-              <h3 className="text-xl font-semibold text-text mb-3">
+              {/* Title */}
+              <h3 className="text-xl font-semibold text-text mb-2">
                 {project.title}
               </h3>
-              <p className="text-subtext1 mb-6 text-sm">
+
+              {/* Description */}
+              <p className="text-subtext1 mb-4 text-sm leading-relaxed">
                 {project.description}
               </p>
 
+              {/* Tags */}
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="px-3 py-1 text-xs bg-surface0/50 text-subtext0 rounded-full backdrop-blur-sm"
+                    className="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-subtext0 backdrop-blur-md"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <div className="flex gap-4 pt-4 border-t border-surface0">
+              {/* Links */}
+              <div className="flex gap-4 pt-4 border-t border-white/10 mt-auto">
                 <a
                   href={project.github}
-                  className="inline-flex items-center gap-2 text-sm text-subtext1 hover:text-mauve transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-subtext1 hover:text-accent transition-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Github size={18} />
                   <span>Code</span>
                 </a>
+
                 <a
                   href={project.demo}
-                  className="inline-flex items-center gap-2 text-sm text-subtext1 hover:text-mauve transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-subtext1 hover:text-accent transition-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <ExternalLink size={18} />
-                  <span>Read About It</span>
+                  <span>Read</span>
                 </a>
               </div>
             </motion.div>
