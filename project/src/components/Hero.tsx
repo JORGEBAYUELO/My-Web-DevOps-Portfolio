@@ -58,15 +58,15 @@ const Hero = () => {
 
           {/* ROLE */}
           <p className="text-2xl md:text-3xl text-subtext1 mb-4">
-            IT Specialist & Systems Administrator
+            SOC Analyst
           </p>
           
           {/* DESCRIPTION */}
           <p className="text-lg text-subtext0 mb-12 max-w-2xl mx-auto leading-relaxed">
-            I specialize in Linux and Windows systems administration, IT support, and infrastructure operations.
-            My experience inlcudes troubleshooting production issues, managing access and permissions, and
-            supporting cloud-based environments on AWS. I'm focused on improving reliability, reducing
-            manual work through automation, and applying security best practices across IT systems.
+            Hands-on IT professional with experience supporting enterpise users, troubleshooting endpoints,
+            managing access controls, and maintaining Windows/Linux environments. Focused on security operations
+            including alert triage, incident escalation, vulnerability remediation, phishing analysis, and defensive
+            monitoring. CompTIA Security+ certified and ready to contribute in a SOC Analyst Level 1 environment.
           </p>
 
           {/* SOCIALS (GLASS STYLE) */}
@@ -103,7 +103,7 @@ const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="/JorgeBayuelo_IT_Specialist.pdf"
+              href="/JorgeBayuelo_SocAnalyst.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -1, boxShadow: "0 6px 16px rgba(0,0,0,0.25)" }}
