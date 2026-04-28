@@ -22,21 +22,23 @@ const About = () => {
 
           <div className="max-w-3xl mx-auto text-left text-subtext1 leading-relaxed space-y-6">
             <p className="leading-relaxed">
-              I’m an IT Professional with a strong foundation in systems administration, user support, and infrastructure operations.
-              I focus on keeping systems stable, secure, and efficient while supporting end users and business critical services 
-              in real world environments.
+              I’m a CompTIA Security+ certified professional with hands-on experience supporting enterprise users,
+              managing endpoints, troubleshooting Windows and Linux systems, and maintaining secure access in
+              production environments.
             </p>
 
             <p className="leading-relaxed">
-              My background spans desktop support, Linux and Windows system administration, and cloud-based infrastructure.
-              I enjoy working close to the systems themselves, troubleshooting issues, improving reliability, and 
-              automating repetitive tasks to reduce operational friction.
+              My background as a Desktop Support Technician has given me direct exposure to how real business
+              systems operate, how incidents impact users, and how to investigate technical issues efficiently under
+              pressure. That operational experience translates naturally into security monitoring, alert triage, endpoint
+              defense, and incident escalation.
             </p>
 
             <p className="leading-relaxed">
-              I bring a practical, hands-on mindset to IT operations, understanding how systems behave in production, responding 
-              calmly under pressure, and continuously improving processes through documentation and automation. I'm especially interested
-              in roles where I can grow deeper into systems administration while contributing to operational excellence.
+              I'm currently focused on transitioning into a SOC Analyst Level 1 role, where I can apply my foundation in
+              IT operations alongside growing skills in SIEM monitoring, log analysis, phishing investigation, vulnerability
+              management, and threat detection. I bring a calm, analytical mindset and a strong commitment to
+              continuous improvement.
             </p>
           </div>
         </motion.div>
