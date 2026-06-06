@@ -63,8 +63,8 @@ const Hero = () => {
           
           {/* DESCRIPTION */}
           <p className="text-lg text-subtext0 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Hands-on IT professional with experience supporting enterpise users, troubleshooting endpoints,
-            managing access controls, and maintaining Windows/Linux environments. Focused on security operations
+            Hands on IT professional with experience supporting enterprise users, troubleshooting endpoints,
+            managing access controls, and maintaining Windows & Linux environments. Focused on security operations
             including alert triage, incident escalation, vulnerability remediation, phishing analysis, and defensive
             monitoring. CompTIA Security+ certified and ready to contribute in a SOC Analyst Level 1 environment.
           </p>
